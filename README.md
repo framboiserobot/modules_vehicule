@@ -1,52 +1,54 @@
 # vehiclecontrol
 
-Control system for RaspberryPi robotic vehicle.
+Système de contrôle pour un véhicule robotique fonctionnant sous Raspberry Pi
 
-Tested OK with Raspbian Stretch on Raspberry Pi 3 B+.
+Testé avec Raspbian Stretch sur un Raspberry Pi 3 B+.
 
-Motor control interface is Cytron HAT-MDD10.
+Interface de contrôle moteur: Cytron HAT-MDD10.
 
-Written in python3.
+Écrit in python3.
 
-4 programs are provided:
+4 programmes sont disponibles:
 
-	Motor control - rover_control_module_UDP.py
-	System commands - rover_system_module_TCP.py
-	Video server - rover_video_module_TCP.py
-	Startup script - start.py
+	Contrôle moteur - rover_control_module_UDP.py
+	Commandes système - rover_system_module_TCP.py
+	Serveur video - rover_video_module_TCP.py
+	Script de démarrage - start.py
 
-Step 1 - Create a directory /rover/bin owned by user pi
+Step 1 - Créer un répertoire /rover et attribuer la propriété à l'utilisateur pi
 
-	> sudo -s
-	> cd /
-	> mkdir /rover
-	> chown pi:pi /rover
+	$ sudo -s
+	$ cd /
+	$ mkdir /rover
+	$ chown pi:pi /rover
+	$ exit
 
-Step 2 - Clone current repo and copy files in directory /rover/bin
+Step 2 - Cloner le repo 
 
-	> cd /rover
-	> git clone https://github.com/raspberryrobot/vehiclecontrol
+	$ cd /rover
+	$ git clone https://github.com/framboiserobot/vehiclecontrol
 
-You should have these files in directory /rover/vehiclecontrol
+Les fichiers suivants seront présents dans le répertoire /rover/vehiclecontrol
 
+	Readme.me
 	rover_control_module_UDP.py
 	rover_system_module_TCP.py
 	rover_video_module_TCP.py
 	start.py
 
-Step 3 - Fix program permissions
+Step 3 - Activer le droit d'exécution pour les scripts
 
-	> cd /rover/vehiclecontrol
-	> chmod +x *.py
+	$ cd /rover/vehiclecontrol
+	$ chmod +x *.py
 
-Step 4 - Manage startup execution with cron 
+Step 4 - Assigner le script de démarrage au service cron
 	
-	> crontab -e
+	$ crontab -e
 
-Add the following line
+Ajouter la ligne suivantes
 
 	@reboot /rover/vehiclecontrol/start.py
 	
-Step 5 - Reboot
+Step 5 - Redémarrer
 
-Control programs will be started at next reboot
+Les programmes seront executé au prochain démarrage
