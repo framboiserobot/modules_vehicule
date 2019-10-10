@@ -15,7 +15,7 @@ Interface de contrôle moteur: Cytron HAT-MDD10.
 	Serveur video - rover_video_module_TCP.py
 	Script de démarrage - start.py
 
-Step 1 - Créer un répertoire /rover et attribuer la propriété à l'utilisateur pi
+Étape 1 - Créer un répertoire /rover et attribuer la propriété à l'utilisateur pi
 
 	$ sudo -s
 	$ cd /
@@ -23,7 +23,7 @@ Step 1 - Créer un répertoire /rover et attribuer la propriété à l'utilisate
 	$ chown pi:pi /rover
 	$ exit
 
-Step 2 - Cloner le repo 
+Étape 2 - Cloner le repo 
 
 	$ cd /rover
 	$ git clone https://github.com/framboiserobot/vehiclecontrol
@@ -36,12 +36,12 @@ Les fichiers suivants seront présents dans le répertoire /rover/vehiclecontrol
 	rover_video_module_TCP.py
 	start.py
 
-Step 3 - Activer le droit d'exécution pour les scripts
+Étape 3 - Activer le droit d'exécution pour les scripts
 
 	$ cd /rover/vehiclecontrol
 	$ chmod +x *.py
 
-Step 4 - Assigner le script de démarrage au service cron
+Étape 4 - Assigner le script de démarrage au service cron
 	
 	$ crontab -e
 
@@ -49,6 +49,6 @@ Ajouter la ligne suivantes
 
 	@reboot /rover/vehiclecontrol/start.py
 	
-Step 5 - Redémarrer
+Étape 5 - Redémarrer
 
 Les programmes seront executés au prochain démarrage.
