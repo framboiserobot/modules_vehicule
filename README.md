@@ -30,7 +30,7 @@ Step 2 - Cloner le repo
 
 Les fichiers suivants seront présents dans le répertoire /rover/vehiclecontrol
 
-	Readme.me
+	README.md
 	rover_control_module_UDP.py
 	rover_system_module_TCP.py
 	rover_video_module_TCP.py
@@ -51,4 +51,4 @@ Ajouter la ligne suivantes
 	
 Step 5 - Redémarrer
 
-Les programmes seront executé au prochain démarrage
+Les programmes seront executés au prochain démarrage.
