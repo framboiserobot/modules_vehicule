@@ -1,4 +1,4 @@
-# vehiclecontrol
+# modules_vehicule
 
 Système de contrôle pour un véhicule robotique fonctionnant sous Raspberry Pi
 
@@ -26,9 +26,9 @@ Interface de contrôle moteur: Cytron HAT-MDD10.
 Étape 2 - Cloner le repo 
 
 	$ cd /rover
-	$ git clone https://github.com/framboiserobot/vehiclecontrol
+	$ git clone https://github.com/framboiserobot/modules_vehicule
 
-Les fichiers suivants seront présents dans le répertoire /rover/vehiclecontrol
+Les fichiers suivants seront présents dans le répertoire /rover/modules_vehicule
 
 	README.md
 	rover_control_module_UDP.py
@@ -38,7 +38,7 @@ Les fichiers suivants seront présents dans le répertoire /rover/vehiclecontrol
 
 Étape 3 - Activer le droit d'exécution pour les scripts
 
-	$ cd /rover/vehiclecontrol
+	$ cd /rover/modules_vehicule
 	$ chmod +x *.py
 
 Étape 4 - Assigner le script de démarrage au service cron
@@ -47,7 +47,7 @@ Les fichiers suivants seront présents dans le répertoire /rover/vehiclecontrol
 
 Ajouter la ligne suivantes
 
-	@reboot /rover/vehiclecontrol/start.py
+	@reboot /rover/modules_vehicule/start.py
 	
 Étape 5 - Redémarrer
 
