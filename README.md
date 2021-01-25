@@ -48,7 +48,14 @@ Les fichiers suivants seront présents dans le répertoire /rover/modules_vehicu
 Ajouter la ligne suivantes
 
 	@reboot /rover/modules_vehicule/start.py
-	
-Étape 5 - Redémarrer
+
+Étape 5 - Installation des modules Python 
+
+    GPIO
+        sudo apt-get install python3-rpi.gpio
+    Camera
+        sudo apt-get install python3-picamera
+
+Étape 6 - Redémarrer
 
 Les programmes seront executés au prochain démarrage.
