@@ -31,8 +31,8 @@ Testé avec les versions suivantes;
 Étape 2 - installation des composantes logicielles requises
 
 	sudo apt-get install python3-rpi.gpio 
-    	sudo apt-get install python3-picamera
-    	sudo apt-get install git
+	sudo apt-get install python3-picamera
+	sudo apt-get install git
 
 Étape 3 - Créer un répertoire /rover et attribuer la propriété à l'utilisateur pi
 
