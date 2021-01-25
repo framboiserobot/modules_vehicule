@@ -1,7 +1,9 @@
 # Description
 
 Système de contrôle pour un véhicule robotique fonctionnant sous Raspberry Pi.
+
 Interface de contrôle moteur: Cytron HAT-MDD10.
+
 Écrit in python3.
 
 Testé avec les versions suivantes;
