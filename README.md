@@ -22,13 +22,13 @@ Testé avec les versions suivantes;
 
 # Installation et configuration
 
-Étape 1 - configuration du RaspberryPi
+Étape 1 - Configuration du RaspberryPi
 
 	$ sudo raspi-config
 	Advanced options - Expand file system
 	Interface options - Enable camera 
 	
-Étape 2 - installation des composantes logicielles requises
+Étape 2 - Installation des composantes logicielles requises
 
 	sudo apt-get install python3-rpi.gpio 
 	sudo apt-get install python3-picamera
