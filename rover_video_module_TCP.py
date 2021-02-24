@@ -42,7 +42,10 @@ def start_video_server():
         # Set camera configuration
         camera.resolution = VIDEO_RESOLUTION
         camera.framerate = VIDEO_FRAMERATE
-        
+        #camera.hflip = True
+        #camera.vflip = True
+        #camera.rotation = 90
+     
         # Start camera streaming
         try:
             if DEBUG: print("[MSG]> start video capture")
