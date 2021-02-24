@@ -32,7 +32,7 @@ motor_speed_max = 100
 steering_delta = 0.1
 
 # GPIO definition
-GPIO.setmode(GPIO.BCM)      # GPIO numbering mode
+GPIO.setmode(GPIO.BCM)          # GPIO numbering mode
 GPIO.setwarnings(False) 	# enable warning from GPIO
 AN2 = 12                	# set pwm2 pin on MD10-Hat
 AN1 = 13                	# set pwm1 pin on MD10-hat
