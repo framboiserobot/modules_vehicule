@@ -129,11 +129,11 @@ def start_C2(ip,port):
                 motor_L_dir_val = motor_R_dir_val = 0
                 telemetry_data += "reverse"
                 if (rl > 0):
-                    motor_L_pwm_val = motor_L_pwm_val * steering_delta
-                    telemetry_data += " left"
-                elif (rr > 0):
                     motor_R_pwm_val = motor_R_pwm_val * steering_delta
                     telemetry_data += " right"
+                elif (rr > 0):
+                    motor_L_pwm_val = motor_L_pwm_val * steering_delta
+                    telemetry_data += " left"
             elif(rl > 0) and (lf == 0) and (lr== 0):
                 motor_L_pwm_val = motor_R_pwm_val = 100
                 motor_L_dir_val = 0
