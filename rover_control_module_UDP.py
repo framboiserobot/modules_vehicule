@@ -32,18 +32,18 @@ motor_speed_max = 100
 steering_delta = 0.1
 
 # GPIO definition
-GPIO.setmode(GPIO.BCM)  	# GPIO numbering mode
-GPIO.setwarnings(False) 	# enable warning from GPIO
-AN2 = 12                	# set pwm2 pin on MD10-Hat
-AN1 = 13                	# set pwm1 pin on MD10-hat
-DIG2 = 26               	# set dir2 pin on MD10-Hat
-DIG1 = 24               	# set dir1 pin on MD10-Hat
-GPIO.setup(AN2, GPIO.OUT)   # set pin as output
-GPIO.setup(AN1, GPIO.OUT)   # set pin as output
-GPIO.setup(DIG2, GPIO.OUT)  # set pin as output
-GPIO.setup(DIG1, GPIO.OUT)  # set pin as output
-p1 = GPIO.PWM(AN1, 100)     # set pwm for M1
-p2 = GPIO.PWM(AN2, 100)     # set pwm for M2
+GPIO.setmode(GPIO.BCM)  	    # GPIO numbering mode
+GPIO.setwarnings(False) 	    # enable warning from GPIO
+AN2 = 12                	    # set pwm2 pin on MD10-Hat
+AN1 = 13                	    # set pwm1 pin on MD10-hat
+DIG2 = 26               	    # set dir2 pin on MD10-Hat
+DIG1 = 24               	    # set dir1 pin on MD10-Hat
+GPIO.setup(AN2, GPIO.OUT)       # set pin as output
+GPIO.setup(AN1, GPIO.OUT)       # set pin as output
+GPIO.setup(DIG2, GPIO.OUT)      # set pin as output
+GPIO.setup(DIG1, GPIO.OUT)      # set pin as output
+p1 = GPIO.PWM(AN1, 100)         # set pwm for M1
+p2 = GPIO.PWM(AN2, 100)         # set pwm for M2
 
 # -----------------------------------------------------------------------------
 # Functions
